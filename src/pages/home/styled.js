@@ -43,23 +43,25 @@ export const AgeModal = styled.div`
 
 export const ModalDesc = styled.div`
     color: ${TEXT_DARK};
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
     text-align: center;
     margin-top: 0vh;
+    text-transform: uppercase;
+    font-size: 1.1rem;
     ${props => props.rus && `
         margin-bottom: 4vh;
         font-family: ${ROBOTO};
         word-spacing: 1px;
         font-size: 1rem;
-        text-transform: uppercase;
     `};
 `
 
 export const DescTitle = styled.div`
     color: ${RED};
     font-size: 1.5rem;
-    margin-bottom: 0vh;
+    margin-bottom: -4vh;
     ${props => props.rus && `
+        font-size: 1.4rem;
         margin-bottom: -5vh;
         font-family: ${ROBOTO};
     `};
@@ -76,8 +78,10 @@ export const ModalBtn = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
     &:last-child {
-        margin-top: 3vh;
+        margin-top: 1vh;
     }
     &:hover {
         background: ${RED};

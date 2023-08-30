@@ -4,11 +4,12 @@ import Title from '../../components/title/Title';
 import { AgeModal, AgeModalWrapper, DescTitle, ModalBtn, ModalDesc, Wrapper } from './styled';
 
 const HomePage = () => {
-    const {testAgeModal, setTestAgeModal, rus} = useContext(PagesContext)
+    const {testAgeModal, setTestAgeModal, rus, setShowBurger} = useContext(PagesContext)
     const [showCursor, setShowCursor] = useState(false)
     const [minorsModal, setMinorsModal] = useState(false)
 
     const startSettimeout = () => {
+        setShowBurger(true)
         setTimeout(() => {
             setShowCursor(true)
         }, 7000);
