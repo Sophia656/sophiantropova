@@ -22,7 +22,7 @@ export const SeriesWrap = styled.div`
     background: pink;
     margin: 10vh 0;
     color: red;
-    background-image: ${props => props.backimg || 'none'};
+    background-image: ${props => props.backimg || RED};
     background-size: cover;
     display: flex;
     justify-content: center;

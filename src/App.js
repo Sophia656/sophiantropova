@@ -26,6 +26,10 @@ function App() {
   const [rus, setRus] = useState(false)
   const [showBurger, setShowBurger] = useState(false)
 
+  const handleClick = () => {
+    document.scrollIntoView(0, {behavior: 'smooth'});
+}
+
   return (
     <PagesContext.Provider value={{
       height, setHeight, 
@@ -34,7 +38,8 @@ function App() {
       modalCrYear, setModalCrYear,
       testAgeModal, setTestAgeModal,
       rus, setRus,
-      showBurger, setShowBurger
+      showBurger, setShowBurger,
+      handleClick
     }}>
       {showBurger && <Burger />}
       <LangBtn />

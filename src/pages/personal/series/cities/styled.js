@@ -19,4 +19,7 @@ export const Image = styled.div`
     margin: 10vh 0;
     background-image: ${props => props.backimg || 'none'};
     background-size: cover;
+    ${props => props.w && `
+        width: 66vw;
+    `}
 `

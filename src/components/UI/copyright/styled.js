@@ -6,7 +6,7 @@ export const CopyrightWrap = styled.div`
     top: 0;
     left: 0;
     font-size: 11px;
-    margin-top: 5vh;
+    margin-top: 25vh;
     margin-left: 15vw;
     line-height: 10px;
     padding: 8px 8px;
