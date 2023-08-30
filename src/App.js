@@ -17,6 +17,7 @@ import Destrudo from "./pages/personal/series/destrudo/Destrudo";
 import Kaya from "./pages/portraits/series/kaya/Kaya";
 import Nastasya from "./pages/portraits/series/nastasya/Nastasya";
 import CentrifugalForce from "./pages/private/series/centrifugal_force/CentrifugalForce";
+import Rina from "./pages/portraits/series/rina/Rina";
 
 const HomePage = React.lazy(() => import('./pages/home/HomePage'));
 const PersonalPage = React.lazy(() => import('./pages/personal/PersonalPage'));
@@ -87,6 +88,11 @@ function App() {
         <Route path='/portraits/anton' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Anton />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/rina' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Rina />
           </React.Suspense>
         }/>
         <Route path='/portraits/rina_anna' element={

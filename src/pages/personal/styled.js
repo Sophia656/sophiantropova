@@ -34,8 +34,8 @@ export const SeriesTitle = styled(Link)`
     color: ${RED};
     width: 27vw;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 2.2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
     border-radius: 4px;
     text-align: center;
     line-height: 4.5vh;
@@ -46,7 +46,7 @@ export const SeriesTitle = styled(Link)`
     text-transform: uppercase;
     &:hover {
         width: 30vw;
-        font-size: 2.5rem;
+        font-size: 2.6rem;
         line-height: 5.5vh;
         backdrop-filter: blur(4px);
     }

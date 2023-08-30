@@ -58,7 +58,7 @@ const Burger = () => {
                     to='/private'
                     rus={rus}
                     >
-                        {rus ? 'ЧАСТНЫЕ СЪЕМКИ' : 'PRIVATE FILMING'}
+                        {rus ? 'ЧАСТНЫЕ ИСТОРИИ' : 'PRIVATE STORIES'}
                     </BurgerItemTitle>
                 </BurgerItem>
                 <BurgerItem>

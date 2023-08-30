@@ -32,7 +32,7 @@ const Hasard = () => {
             <MyImage cr_year='2021' backimg={`url(${img10})`} />
             <MyImage cr_year='2022' backimg={`url(${img11})`} />
             <MyImage cr_year='2021' backimg={`url(${img12})`} />
-            <MyImage cr_year='2021' w='true' backimg={`url(${img13})`} />
+            {/* <MyImage cr_year='2021' w='true' backimg={`url(${img13})`} /> */}
             <MyImage cr_year='2021' backimg={`url(${img14})`} />
         </Wrapper>
     );

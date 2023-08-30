@@ -7,6 +7,7 @@ import nadya from '../../img/web/portraits/nadya_cover.jpg';
 import kaya from '../../img/web/portraits/kaya_cover.jpg';
 import nastya from '../../img/web/portraits/nastya_cover.jpg';
 import nastasya from '../../img/web/portraits/nastasya_cover.jpg';
+import rina from '../../img/web/portraits/rina_cover.jpg';
 
 const PortraitsPage = () => {
     const { handleClick } = useContext(PagesContext)
@@ -14,6 +15,9 @@ const PortraitsPage = () => {
         <Wrapper>
             <SeriesWrap backimg={`url(${anton})`}>
                 <SeriesTitle onClick={handleClick} to='/portraits/anton'>ANTON<br/>2023</SeriesTitle>
+            </SeriesWrap>
+            <SeriesWrap backimg={`url(${rina})`}>
+                <SeriesTitle onClick={handleClick} to='/portraits/rina'>RINA<br/>2023</SeriesTitle>
             </SeriesWrap>
             <SeriesWrap backimg={`url(${kaya})`}>
                 <SeriesTitle onClick={handleClick} to='/portraits/kaya'>KAYA KAN<br/>2022</SeriesTitle>

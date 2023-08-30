@@ -7,6 +7,7 @@ export const paths = [
     '/personal/between_the_city_yes_and_the_city_no',
     '/personal/destrudo',
     '/portraits/anton',
+    '/portraits/rina',
     '/portraits/rina_anna',
     '/portraits/kaya',
     '/portraits/nadya',

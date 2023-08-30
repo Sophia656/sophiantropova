@@ -98,7 +98,7 @@ export const BurgerItemTitle = styled(Link)`
     height: 8vh;
     backdrop-filter: blur(15px);
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.4rem;
     border-radius: 4px;
     text-align: center;
