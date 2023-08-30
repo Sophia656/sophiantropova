@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { BACK_DARK } from '../css-settings/index';
 import { BurgerItem, BurgerItemBottom, BurgerItemTitle, BurgerItemTop, BurgerMenu, BurgerWrapper, Wrapper } from './styled';
-import portraits from '../../img/web/contacts_page2.jpg';
-import personal from '../../img/web/personal_page2.jpg';
 import { useEffect } from 'react';
 import { useContext } from 'react';
 import { PagesContext } from '../context/context';
@@ -30,7 +28,7 @@ const Burger = () => {
                 <BurgerItemBottom dotback={changeDots ? BACK_DARK : ''} active={active} />
             </BurgerWrapper>
             <BurgerMenu  active={active}>
-                <BurgerItem backimg={`url(${personal})`}>
+                <BurgerItem>
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
@@ -41,7 +39,7 @@ const Burger = () => {
                         {rus ? 'ПЕРСОНАЛЬНЫЕ РАБОТЫ' : 'PERSONALITIES'}
                     </BurgerItemTitle>
                 </BurgerItem>
-                <BurgerItem backimg={`url(${portraits})`}>
+                <BurgerItem>
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
@@ -52,7 +50,7 @@ const Burger = () => {
                         {rus ? 'ПОРТРЕТЫ' : 'PORTRAITS'}
                     </BurgerItemTitle>
                 </BurgerItem>
-                <BurgerItem backimg={`url(${portraits})`}>
+                <BurgerItem>
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {TEXT_LIGHT, RED, TEXT_DARK, ROBOTO} from '../css-settings/index';
+import {TEXT_LIGHT, RED, ROBOTO} from '../css-settings/index';
 
 export const Wrapper = styled.div`
     width: 100vw;
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 60;
+    z-index: 500;
     margin-top: 10vh;
 `
 export const BurgerWrapper = styled.div`
@@ -65,9 +65,8 @@ export const BurgerMenu = styled.div`
     left: 0;
     margin-top: 74vh;
     justify-content: space-evenly;
-    height: 15vh;
-    padding-top: 1vh;
-    // background: ${TEXT_DARK};
+    height: 16vh;
+    padding: 1vh 0;
     backdrop-filter: blur(15px);
     width: 100vw;
     position: relative;
@@ -84,11 +83,11 @@ export const BurgerMenu = styled.div`
 export const BurgerItem = styled.div`
     width: 20vw;
     height: 14vh;
-    background-image: ${props => props.backimg || 'none'};
-    background-size: cover;
+    background: ${RED};
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 `
 
 export const BurgerItemTitle = styled(Link)`
@@ -106,7 +105,6 @@ export const BurgerItemTitle = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.5vh;
     &:hover {
         border: ${props => props.border || `1px solid ${TEXT_LIGHT}`};
     }

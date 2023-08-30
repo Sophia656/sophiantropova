@@ -4,6 +4,9 @@ import LangBtn from "./components/UI/language-btn/LangBtn";
 import Burger from "./components/burger/Burger";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import ContactsPage from "./pages/contacts/ContactsPage";
+import Hasard from "./pages/personal/series/hasard/Hasard";
+import Cities from "./pages/personal/series/cities/Cities";
+import Ballet from "./pages/personal/series/ballet/Ballet";
 
 const HomePage = React.lazy(() => import('./pages/home/HomePage'));
 const PersonalPage = React.lazy(() => import('./pages/personal/PersonalPage'));
@@ -44,6 +47,21 @@ function App() {
         <Route path='/personal' element={
           <React.Suspense fallback={<div>loading</div>}>
               <PersonalPage />
+          </React.Suspense>
+        }/>
+        <Route path='/personal/hasard' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Hasard />
+          </React.Suspense>
+        }/>
+        <Route path='/personal/between_the_city_yes_and_the_city_no' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Cities />
+          </React.Suspense>
+        }/>
+        <Route path='/personal/ballet_class' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Ballet />
           </React.Suspense>
         }/>
         <Route path='/portraits' element={

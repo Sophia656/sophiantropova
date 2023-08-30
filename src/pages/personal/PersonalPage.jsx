@@ -1,12 +1,22 @@
-import React from 'react';
-import { SeriesWrap, Wrapper } from './styled';
+import React, { useContext } from 'react';
+import { SeriesTitle, SeriesWrap, Wrapper } from './styled';
+import hasard from '../../img/web/personal/hasard_cover.jpg';
+import cities from '../../img/web/personal/cities_cover.jpg';
+import ballet from '../../img/web/personal/ballet_cover.jpg';
 
 const PersonalPage = () => {
+
     return (
         <Wrapper>
-            <SeriesWrap>1</SeriesWrap>
-            <SeriesWrap>2</SeriesWrap>
-            <SeriesWrap>3</SeriesWrap>
+            <SeriesWrap backimg={`url(${hasard})`}>
+                <SeriesTitle to='/personal/hasard'>HASARD OBJECTIF</SeriesTitle>
+            </SeriesWrap>
+            <SeriesWrap backimg={`url(${cities})`}>                
+                <SeriesTitle to='/personal/between_the_city_yes_and_the_city_no'>Between the city Yes and the city No</SeriesTitle>
+            </SeriesWrap>
+            <SeriesWrap backimg={`url(${ballet})`}>                
+                <SeriesTitle to='/personal/ballet_class'>Ballet class</SeriesTitle>
+            </SeriesWrap>
         </Wrapper>
     );
 };
