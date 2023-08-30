@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {TEXT_LIGHT, ROBOTO, RED} from '../../components/css-settings/index';
+import {ROBOTO, RED} from '../../components/css-settings/index';
 
 export const Wrapper = styled.div`
     overflow: hidden;
     width: 100vw;
     height: fit-content;
     display: flex;
-    // flex-direction: column;
     color: white;
     display: flex;
     align-items: center;
@@ -19,10 +18,10 @@ export const Wrapper = styled.div`
 export const SeriesWrap = styled.div`
     height: 80vh;
     width: 35vw;
-    background: pink;
+    background: ${RED};
     margin: 10vh 0;
     color: red;
-    background-image: ${props => props.backimg || RED};
+    background-image: ${props => props.backimg || 'none'};
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -33,25 +32,23 @@ export const SeriesTitle = styled(Link)`
     padding: 0.4vw 0.9vh;
     text-decoration: none;
     color: ${RED};
-    width: 18vw;
-    
-    // backdrop-filter: blur(15px);
+    width: 27vw;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     border-radius: 4px;
     text-align: center;
     line-height: 4.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     text-transform: uppercase;
     &:hover {
-        width: 25vw;
-        font-size: 2.4rem;
+        width: 30vw;
+        font-size: 2.5rem;
         line-height: 5.5vh;
-        // border: ${props => props.border || `1px solid ${TEXT_LIGHT}`};
+        backdrop-filter: blur(4px);
     }
     ${props => props.rus && `
         font-weight: 800;

@@ -11,10 +11,6 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    cursor: none;
-    ${props => props.cursor &&`
-        cursor: default;
-    `};
 `
 
 export const AgeModalWrapper = styled.div`

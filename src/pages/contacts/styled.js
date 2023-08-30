@@ -32,7 +32,7 @@ export const Description = styled.div`
 `
 export const DescTitle = styled.div`
     font-size: 2.7rem;
-    margin-top: 10vh;
+    margin-top: 2vh;
     ${props => props.rus && `
         font-size: 2.6rem;
         font-family: ${ROBOTO};
@@ -48,6 +48,10 @@ export const DescContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    &:first-child {
+        text-align: center;
+        margin-top: -2vh;
+    }
     ${props => props.rus && `
         font-family: ${ROBOTO};
         font-weight: 200;

@@ -24,6 +24,14 @@ const ContactsPage = () => {
                 {showCr && <Copyright />}
                 <Avatar onContextMenu={onHandleRightClick} src={avatar} alt="" />
                 <Description>
+                    <DescContent rus={rus}>
+                        <p>{rus
+                        ?
+                        'София Антропова – фотограф, визуальный исследователь, работающая в жанре психологического портрета, нередко для которого формой выражения выступает ню фотография. Она живет и работает в России, Москве.'
+                        :
+                        'Sophia Antropova is a photographer and visual researcher working in the genre of psychological portrait. For her nude photography often acts as a form of self-expression. She lives and works in Moscow, Russia.'
+                        }</p>
+                    </DescContent>
                     <DescTitle rus={rus}>{rus ? 'КОНТАКТЫ' : 'CONTACTS'}</DescTitle>
                     <DescContent rus={rus}>
                         <p>{rus

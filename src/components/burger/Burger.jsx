@@ -23,7 +23,7 @@ const Burger = () => {
 
     return (
         <Wrapper>
-            <BurgerWrapper  onClick={() => setActive(!active)} onMouseEnter={() => setShowSeries(false)}>
+            <BurgerWrapper onClick={() => setActive(!active)} onMouseEnter={() => setShowSeries(false)}>
                 <BurgerItemTop dotback={changeDots ? BACK_DARK : ''} active={active} />
                 <BurgerItemBottom dotback={changeDots ? BACK_DARK : ''} active={active} />
             </BurgerWrapper>
@@ -48,6 +48,17 @@ const Burger = () => {
                     rus={rus}
                     >
                         {rus ? 'ПОРТРЕТЫ' : 'PORTRAITS'}
+                    </BurgerItemTitle>
+                </BurgerItem>
+                <BurgerItem>
+                    <BurgerItemTitle
+                    active={showSeries} 
+                    onMouseEnter={() => setShowSeries(true)} 
+                    onClick={() => setActive(false)} 
+                    to='/private'
+                    rus={rus}
+                    >
+                        {rus ? 'ЧАСТНЫЕ СЪЕМКИ' : 'PRIVATE FILMING'}
                     </BurgerItemTitle>
                 </BurgerItem>
                 <BurgerItem>

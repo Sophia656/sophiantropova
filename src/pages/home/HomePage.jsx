@@ -5,14 +5,10 @@ import { AgeModal, AgeModalWrapper, DescTitle, ModalBtn, ModalDesc, Wrapper } fr
 
 const HomePage = () => {
     const {testAgeModal, setTestAgeModal, rus, setShowBurger} = useContext(PagesContext)
-    const [showCursor, setShowCursor] = useState(false)
     const [minorsModal, setMinorsModal] = useState(false)
 
     const startSettimeout = () => {
         setShowBurger(true)
-        setTimeout(() => {
-            setShowCursor(true)
-        }, 7000);
     }
 
     const forMinors = () => {
@@ -64,8 +60,8 @@ const HomePage = () => {
             
         </AgeModalWrapper>
         :
-        <Wrapper cursor={showCursor}>
-            <Title cursor={showCursor} />
+        <Wrapper>
+            <Title />
         </Wrapper>
          }
         

@@ -12,14 +12,3 @@ export const Wrapper = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
 `
-
-export const Image = styled.div`
-    height: 85vh;
-    width: 37vw;
-    margin: 10vh 0;
-    background-image: ${props => props.backimg || 'none'};
-    background-size: cover;
-    ${props => props.w && `
-        width: 66vw;
-    `}
-`

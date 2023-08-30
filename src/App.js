@@ -6,7 +6,17 @@ import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import ContactsPage from "./pages/contacts/ContactsPage";
 import Hasard from "./pages/personal/series/hasard/Hasard";
 import Cities from "./pages/personal/series/cities/Cities";
-import Ballet from "./pages/personal/series/ballet/Ballet";
+import Ballet from "./pages/private/series/ballet/Ballet";
+import Anton from "./pages/portraits/series/anton/Anton";
+import RinaAnna from "./pages/portraits/series/rina_anna/RinaAnna";
+import Nadya from "./pages/portraits/series/nadya/Nadya";
+import Nastya from "./pages/portraits/series/nastya/Nastya";
+import WeddDay from "./pages/private/series/wedd-day/WeddDay";
+import PrivatePage from "./pages/private/PrivatePage";
+import Destrudo from "./pages/personal/series/destrudo/Destrudo";
+import Kaya from "./pages/portraits/series/kaya/Kaya";
+import Nastasya from "./pages/portraits/series/nastasya/Nastasya";
+import CentrifugalForce from "./pages/private/series/centrifugal_force/CentrifugalForce";
 
 const HomePage = React.lazy(() => import('./pages/home/HomePage'));
 const PersonalPage = React.lazy(() => import('./pages/personal/PersonalPage'));
@@ -28,7 +38,7 @@ function App() {
 
   const handleClick = () => {
     document.scrollIntoView(0, {behavior: 'smooth'});
-}
+  }
 
   return (
     <PagesContext.Provider value={{
@@ -41,7 +51,7 @@ function App() {
       showBurger, setShowBurger,
       handleClick
     }}>
-      {showBurger && <Burger />}
+      <Burger />
       <LangBtn />
       <Routes>
         <Route path='/' element={
@@ -64,14 +74,64 @@ function App() {
               <Cities />
           </React.Suspense>
         }/>
-        <Route path='/personal/ballet_class' element={
+        <Route path='/personal/destrudo' element={
           <React.Suspense fallback={<div>loading</div>}>
-              <Ballet />
+              <Destrudo />
           </React.Suspense>
         }/>
         <Route path='/portraits' element={
           <React.Suspense fallback={<div>loading</div>}>
               <PortraitsPage />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/anton' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Anton />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/rina_anna' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <RinaAnna />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/kaya' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Kaya />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/nadya' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Nadya />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/nastya' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Nastya />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/nastasya' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Nastasya />
+          </React.Suspense>
+        }/>
+        <Route path='/private' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <PrivatePage />
+          </React.Suspense>
+        }/>
+        <Route path='/private/wedd_day' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <WeddDay />
+          </React.Suspense>
+        }/>
+        <Route path='/private/ballet_class' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Ballet />
+          </React.Suspense>
+        }/>
+        <Route path='/private/centrifugal_force' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <CentrifugalForce />
           </React.Suspense>
         }/>
         <Route path='/contacts' element={
