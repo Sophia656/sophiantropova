@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Wrapper } from './styled';
 import img1 from '../../../../img/web/portraits/kaya/1.jpg';
 import img2 from '../../../../img/web/portraits/kaya/2.jpg';

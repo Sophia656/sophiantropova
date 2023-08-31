@@ -18,6 +18,7 @@ import Kaya from "./pages/portraits/series/kaya/Kaya";
 import Nastasya from "./pages/portraits/series/nastasya/Nastasya";
 import CentrifugalForce from "./pages/private/series/centrifugal_force/CentrifugalForce";
 import Rina from "./pages/portraits/series/rina/Rina";
+import Maya from "./pages/portraits/series/maya/Maya";
 
 const HomePage = React.lazy(() => import('./pages/home/HomePage'));
 const PersonalPage = React.lazy(() => import('./pages/personal/PersonalPage'));
@@ -110,14 +111,19 @@ function App() {
               <Nadya />
           </React.Suspense>
         }/>
-        <Route path='/portraits/nastya' element={
+        <Route path='/portraits/maya' element={
           <React.Suspense fallback={<div>loading</div>}>
-              <Nastya />
+              <Maya />
           </React.Suspense>
         }/>
         <Route path='/portraits/nastasya' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Nastasya />
+          </React.Suspense>
+        }/>
+        <Route path='/portraits/nastya' element={
+          <React.Suspense fallback={<div>loading</div>}>
+              <Nastya />
           </React.Suspense>
         }/>
         <Route path='/private' element={

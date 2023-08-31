@@ -9,7 +9,7 @@ const Burger = () => {
     const [active, setActive] = useState(false)
     const [showSeries, setShowSeries] = useState(false)
     const [changeDots, setChangeDots] = useState(false)
-    const { rus, location } = useContext(PagesContext)
+    const { rus, location, handleClick } = useContext(PagesContext)
 
     
 
@@ -32,7 +32,7 @@ const Burger = () => {
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
-                    onClick={() => setActive(false)} 
+                    onClick={() => {setActive(false); handleClick()}} 
                     to='/personal'
                     rus={rus}
                     >
@@ -43,7 +43,7 @@ const Burger = () => {
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
-                    onClick={() => setActive(false)} 
+                    onClick={() => {setActive(false); handleClick()}} 
                     to='/portraits'
                     rus={rus}
                     >
@@ -54,7 +54,7 @@ const Burger = () => {
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
-                    onClick={() => setActive(false)} 
+                    onClick={() => {setActive(false); handleClick()}} 
                     to='/private'
                     rus={rus}
                     >
@@ -65,7 +65,7 @@ const Burger = () => {
                     <BurgerItemTitle
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
-                    onClick={() => setActive(false)}  
+                    onClick={() => {setActive(false); handleClick()}}  
                     to='/contacts'
                     rus={rus}
                     >

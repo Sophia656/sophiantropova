@@ -16,10 +16,10 @@ export const Wrapper = styled.div`
 `
 
 export const SeriesWrap = styled.div`
-    height: 80vh;
+    height: 84vh;
     width: 35vw;
     background: ${RED};
-    margin: 10vh 0;
+    margin: 8vh 0;
     color: red;
     background-image: ${props => props.backimg || 'none'};
     background-size: cover;

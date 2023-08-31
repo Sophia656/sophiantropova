@@ -7,6 +7,7 @@ import nadya from '../../img/web/portraits/nadya_cover.jpg';
 import kaya from '../../img/web/portraits/kaya_cover.jpg';
 import nastya from '../../img/web/portraits/nastya_cover.jpg';
 import nastasya from '../../img/web/portraits/nastasya_cover.jpg';
+import maya from '../../img/web/portraits/maya_cover.jpg';
 import rina from '../../img/web/portraits/rina_cover.jpg';
 
 const PortraitsPage = () => {
@@ -27,6 +28,9 @@ const PortraitsPage = () => {
             </SeriesWrap>
             <SeriesWrap backimg={`url(${nadya})`}>
                 <SeriesTitle onClick={handleClick} to='/portraits/nadya'>NADYA<br/>2022</SeriesTitle>
+            </SeriesWrap>
+            <SeriesWrap backimg={`url(${maya})`}>
+                <SeriesTitle onClick={handleClick} to='/portraits/maya'>MAYA<br/>2021</SeriesTitle>
             </SeriesWrap>
             <SeriesWrap backimg={`url(${nastasya})`}>
                 <SeriesTitle onClick={handleClick} to='/portraits/nastasya'>NASTASYA<br/>2021</SeriesTitle>
