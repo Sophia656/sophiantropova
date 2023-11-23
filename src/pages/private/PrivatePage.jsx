@@ -11,13 +11,13 @@ const PrivatePage = () => {
     return (
         <Wrapper>
             <SeriesWrap backimg={`url(${wedd_day})`}>                
-                <SeriesTitle onClick={handleClick} to='/private/wedd_day'>WEDD-DAY</SeriesTitle>
+                <SeriesTitle onClick={handleClick} to='/private_stories/wedd_day'>WEDD-DAY</SeriesTitle>
             </SeriesWrap>
             <SeriesWrap backimg={`url(${ballet})`}>                
-                <SeriesTitle onClick={handleClick} to='/private/ballet_class'>Ballet class</SeriesTitle>
+                <SeriesTitle onClick={handleClick} to='/private_stories/ballet_class'>Ballet class</SeriesTitle>
             </SeriesWrap>
             <SeriesWrap backimg={`url(${centrifugal_force})`}>                
-                <SeriesTitle onClick={handleClick} to='/private/centrifugal_force'>centrifugal force</SeriesTitle>
+                <SeriesTitle onClick={handleClick} to='/private_stories/centrifugal_force'>centrifugal force</SeriesTitle>
             </SeriesWrap>
         </Wrapper>
     );

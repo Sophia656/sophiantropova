@@ -4,18 +4,15 @@ import LangBtn from "./components/UI/language-btn/LangBtn";
 import Burger from "./components/burger/Burger";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import ContactsPage from "./pages/contacts/ContactsPage";
-import Hasard from "./pages/personal/series/hasard/Hasard";
+import ThreeMirrors from "./pages/personal/series/three-mirrors/ThreeMirrors";
 import Cities from "./pages/personal/series/cities/Cities";
 import Ballet from "./pages/private/series/ballet/Ballet";
 import Anton from "./pages/portraits/series/anton/Anton";
 import RinaAnna from "./pages/portraits/series/rina_anna/RinaAnna";
 import Nadya from "./pages/portraits/series/nadya/Nadya";
-import Nastya from "./pages/portraits/series/nastya/Nastya";
 import WeddDay from "./pages/private/series/wedd-day/WeddDay";
 import PrivatePage from "./pages/private/PrivatePage";
-import Destrudo from "./pages/personal/series/destrudo/Destrudo";
 import Kaya from "./pages/portraits/series/kaya/Kaya";
-import Nastasya from "./pages/portraits/series/nastasya/Nastasya";
 import CentrifugalForce from "./pages/private/series/centrifugal_force/CentrifugalForce";
 import Rina from "./pages/portraits/series/rina/Rina";
 import Maya from "./pages/portraits/series/maya/Maya";
@@ -66,19 +63,14 @@ function App() {
               <PersonalPage />
           </React.Suspense>
         }/>
-        <Route path='/personal/hasard' element={
+        <Route path='/personal/three_mirrors_without_amalgam' element={
           <React.Suspense fallback={<div>loading</div>}>
-              <Hasard />
+              <ThreeMirrors />
           </React.Suspense>
         }/>
         <Route path='/personal/between_the_city_yes_and_the_city_no' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Cities />
-          </React.Suspense>
-        }/>
-        <Route path='/personal/destrudo' element={
-          <React.Suspense fallback={<div>loading</div>}>
-              <Destrudo />
           </React.Suspense>
         }/>
         <Route path='/portraits' element={
@@ -101,7 +93,7 @@ function App() {
               <RinaAnna />
           </React.Suspense>
         }/>
-        <Route path='/portraits/kaya' element={
+        <Route path='/portraits/kaya_kan' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Kaya />
           </React.Suspense>
@@ -116,32 +108,22 @@ function App() {
               <Maya />
           </React.Suspense>
         }/>
-        <Route path='/portraits/nastasya' element={
-          <React.Suspense fallback={<div>loading</div>}>
-              <Nastasya />
-          </React.Suspense>
-        }/>
-        <Route path='/portraits/nastya' element={
-          <React.Suspense fallback={<div>loading</div>}>
-              <Nastya />
-          </React.Suspense>
-        }/>
-        <Route path='/private' element={
+        <Route path='/private_stories' element={
           <React.Suspense fallback={<div>loading</div>}>
               <PrivatePage />
           </React.Suspense>
         }/>
-        <Route path='/private/wedd_day' element={
+        <Route path='/private_stories/wedd_day' element={
           <React.Suspense fallback={<div>loading</div>}>
               <WeddDay />
           </React.Suspense>
         }/>
-        <Route path='/private/ballet_class' element={
+        <Route path='/private_stories/ballet_class' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Ballet />
           </React.Suspense>
         }/>
-        <Route path='/private/centrifugal_force' element={
+        <Route path='/private_stories/centrifugal_force' element={
           <React.Suspense fallback={<div>loading</div>}>
               <CentrifugalForce />
           </React.Suspense>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, DescContent, DescLink, Description, DescTitle, DescWrap, Wrapper } from './styled';
+import { Avatar, DescContent, Description, DescTitle, DescWrap, MailLink, TelegramLink, Wrapper } from './styled';
 import avatar from '../../img/web/000.jpg';
 import { useState } from 'react';
 import Copyright from '../../components/UI/copyright/Copyright';
@@ -17,6 +17,9 @@ const ContactsPage = () => {
             setShowCr(false)
         }, 1500);
     }
+
+    const [mailLinkActive, setMailLinkActive] = useState(false)
+    const [telegramLinkActive, setTelegramLinkActive] = useState(false)
 
     return (
         <Wrapper>
@@ -41,11 +44,24 @@ const ContactsPage = () => {
                         'For all the inquiries and booking please contact:'
                         }</p>
                         <p>
-                            <DescLink rus={rus} href="mailto:antropovasophia@gmail.com">antropovasophia@gmail.com</DescLink>
+                            <MailLink 
+                            active={mailLinkActive}
+                            onMouseEnter={() => setMailLinkActive(true)} 
+                            onMouseLeave={() => setMailLinkActive(false)} 
+                            rus={rus} 
+                            href="mailto:antropovasophia@gmail.com"
+                            >antropovasophia@gmail.com</MailLink>
                         </p>
                         <p>{rus ? 'или' : 'or'}</p>
                         <p>
-                            <DescLink rus={rus} href="https://t.me/sophia_antropova">telegram: @antropovasophia</DescLink>
+                        {rus ? 'телеграм:' : 'telegram:' }
+                            <TelegramLink 
+                            active={telegramLinkActive}
+                            onMouseEnter={() => setTelegramLinkActive(true)} 
+                            onMouseLeave={() => setTelegramLinkActive(false)} 
+                            rus={rus} 
+                            href="https://t.me/sophia_antropova"
+                            > @antropovasophia</TelegramLink>
                         </p>
                     </DescContent>
                 </Description>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {BACK_LIGHT, TEXT_DARK, ROBOTO, BAI} from '../../components/css-settings/index';
+import {BACK_LIGHT, TEXT_DARK, ROBOTO, BAI, RED} from '../../components/css-settings/index';
 
 export const Wrapper = styled.div`
     width: 100vw;
@@ -58,7 +58,7 @@ export const DescContent = styled.div`
     `};
 `
 
-export const DescLink = styled.a`
+export const MailLink = styled.a`
     color: ${TEXT_DARK};
     border-bottom: none;
     text-decoration: none;
@@ -66,4 +66,20 @@ export const DescLink = styled.a`
     ${props => props.rus && `
         font-family: ${BAI};
     `};
+    ${props => props.active &&`
+        color: ${RED};
+    `}
+`
+
+export const TelegramLink = styled.a`
+    color: ${TEXT_DARK};
+    border-bottom: none;
+    text-decoration: none;
+    cursor: pointer;
+    ${props => props.rus && `
+        font-family: ${BAI};
+    `};
+    ${props => props.active &&`
+        color: ${RED};
+    `}
 `

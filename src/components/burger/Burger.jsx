@@ -36,7 +36,7 @@ const Burger = () => {
                     to='/personal'
                     rus={rus}
                     >
-                        {rus ? 'ПЕРСОНАЛЬНЫЕ РАБОТЫ' : 'PERSONALITIES'}
+                        {rus ? 'ПЕРСОНАЛЬНЫЕ РАБОТЫ' : 'PERSONAL'}
                     </BurgerItemTitle>
                 </BurgerItem>
                 <BurgerItem>
@@ -55,7 +55,7 @@ const Burger = () => {
                     active={showSeries} 
                     onMouseEnter={() => setShowSeries(true)} 
                     onClick={() => {setActive(false); handleClick()}} 
-                    to='/private'
+                    to='/private_stories'
                     rus={rus}
                     >
                         {rus ? 'ЧАСТНЫЕ ИСТОРИИ' : 'PRIVATE STORIES'}
