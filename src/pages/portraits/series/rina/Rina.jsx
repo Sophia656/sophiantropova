@@ -12,13 +12,13 @@ import MyImage from '../../../../components/UI/image/MyImage';
 const Rina = () => {
     return (
         <Wrapper>
-            <MyImage cr_year='2022' backimg={`url(${img3})`} />
-            <MyImage cr_year='2022' w='true' backimg={`url(${img4})`} />
-            <MyImage cr_year='2022' backimg={`url(${img1})`} />
-            <MyImage cr_year='2022' w='true' backimg={`url(${img2})`} />
-            <MyImage cr_year='2022' backimg={`url(${img6})`} />
-            <MyImage cr_year='2022' backimg={`url(${img7})`} />
-            <MyImage cr_year='2022' backimg={`url(${img5})`} />
+            <MyImage cr_year='2023' backimg={`url(${img3})`} />
+            <MyImage cr_year='2023' w='true' backimg={`url(${img4})`} />
+            <MyImage cr_year='2023' backimg={`url(${img1})`} />
+            <MyImage cr_year='2023' w='true' backimg={`url(${img2})`} />
+            <MyImage cr_year='2023' backimg={`url(${img6})`} />
+            <MyImage cr_year='2023' backimg={`url(${img7})`} />
+            <MyImage cr_year='2023' backimg={`url(${img5})`} />
         </Wrapper>
     );
 };

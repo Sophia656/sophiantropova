@@ -9,10 +9,10 @@ import MyImage from '../../../../components/UI/image/MyImage';
 const Anton = () => {
     return (
         <Wrapper>
-            <MyImage cr_year='2021' backimg={`url(${img3})`} />
-            <MyImage cr_year='2021' backimg={`url(${img2})`} />
-            <MyImage cr_year='2022' backimg={`url(${img4})`} />
-            <MyImage cr_year='2021' backimg={`url(${img1})`} />
+            <MyImage cr_year='2023' backimg={`url(${img3})`} />
+            <MyImage cr_year='2023' backimg={`url(${img2})`} />
+            <MyImage cr_year='2023' backimg={`url(${img4})`} />
+            <MyImage cr_year='2023' backimg={`url(${img1})`} />
         </Wrapper>
     );
 };

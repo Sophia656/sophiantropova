@@ -7,10 +7,10 @@ export const ImageWrapper = styled.div`
 export const ImageItem = styled.div`
     height: 85vh;
     width: 36vw;
+    ${props => props.w && `
+        width: 66vw;
+    `} 
     margin: 10vh 0;
     background-image: ${props => props.backimg || 'none'};
     background-size: cover;
-    ${props => props.w && `
-        width: 66vw;
-    `}  
 `

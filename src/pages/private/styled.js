@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
 export const SeriesWrap = styled.div`
     height: 84vh;
     width: 35vw;
-    background: ${RED};
     margin: 8vh 0;
     color: red;
     background-image: ${props => props.backimg || 'none'};
@@ -26,11 +25,28 @@ export const SeriesWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+`
+
+export const SeriesCover = styled.img`
+    object-fit: cover;
+    object-position: center;
+    width: inherit;
+    height: inherit;
+    ${props => props.loading &&`
+        filter: blur(10px);
+    `}
+    ${props => props.loaded &&`
+        filter: blur(0px);
+        transition: filter 1s linear;
+    `}
 `
 
 export const SeriesTitle = styled(Link)`
     padding: 0.4vw 0.9vh;
     text-decoration: none;
+    position: absolute;
+    z-index: 500;
     color: ${RED};
     width: 27vw;
     cursor: pointer;

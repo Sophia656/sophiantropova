@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import image from '../../img/web/two_reclining.jpg';
+import cover from '../../img/web/two_reclining.jpg';
+import coverSmall from '../../img/web/two_reclining_small.jpg';
 import {TEXT_DARK, TEXT_LIGHT, RED, ROBOTO} from '../../components/css-settings/index';
 
 export const Wrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    background-image: url(${image});
+    background-image: url(${cover});
     background-size: 100vw 115vh;
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@ export const Wrapper = styled.div`
 export const AgeModalWrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    background-image: url(${image});
+    background-image: url(${coverSmall});
     background-size: 100vw 115vh;
     display: flex;
     align-items: center;

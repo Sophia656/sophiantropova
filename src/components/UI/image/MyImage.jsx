@@ -12,16 +12,15 @@ const MyImage = ({cr_year, w, backimg}) => {
             setShowCr(false)
         }, 1500);
     }
+
     return (
         <ImageWrapper>
             {showCr && <Copyright year={cr_year}  />}
             <ImageItem
             backimg={backimg}
-            // onLoad={onLoad}
             onContextMenu={onHandleRightClick} 
             w={w}
             />
-            {/* {!loaded && <ImgLoaderWrapper></ImgLoaderWrapper>} */}
         </ImageWrapper>
     );
 };
