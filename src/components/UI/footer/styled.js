@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {RED, TEXT_DARK} from '../../css-settings/index';
+import {RED, TEXT_DARK} from '../../css-settings/colors';
 
 export const Wrapper = styled.footer`
     position: absolute;

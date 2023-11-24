@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BACK_DARK } from '../css-settings/index';
+import { BACK_DARK } from '../css-settings/colors';
 import { BurgerItem, BurgerItemBottom, BurgerItemTitle, BurgerItemTop, BurgerMenu, BurgerWrapper, Wrapper } from './styled';
 import { useEffect } from 'react';
 import { useContext } from 'react';

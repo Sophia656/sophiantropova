@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {TEXT_LIGHT, RED, ROBOTO} from '../css-settings/index';
+import {TEXT_LIGHT, RED, ROBOTO} from '../css-settings/colors';
+import px2vw from '../css-settings/utils';
+import {device} from '../css-settings/styles/sizes'
 
 export const Wrapper = styled.div`
     width: 100vw;
@@ -9,7 +11,18 @@ export const Wrapper = styled.div`
     top: 0;
     right: 0;
     z-index: 500;
-    margin-top: 10vh;
+    // margin-top: 10vh;
+    // margin-top: ${px2vw(75)};
+    // @media (min-width: 1024px) {
+    //     width: ${px2vw(320, 768)};
+    //     min-height: ${px2vw(200, 768)};
+    //     height: 100%;
+    // }
+    // @media (min-width: 768px) {
+    //     width: ${px2vw(320, 768)};
+    //     min-height: ${px2vw(200, 768)};
+    //     height: 100%;
+    // }
 `
 export const BurgerWrapper = styled.div`
     position: fixed;
@@ -22,6 +35,17 @@ export const BurgerWrapper = styled.div`
     line-height: 80px;
     text-align: right;
     cursor: pointer;
+    z-index: 1000;
+    // @media (min-width: 1024px) {
+    //     width: ${px2vw(320, 768)};
+    //     min-height: ${px2vw(200, 768)};
+    //     height: 100%;
+    // }
+    // @media (min-width: 768px) {
+    //     width: ${px2vw(320, 768)};
+    //     min-height: ${px2vw(200, 768)};
+    //     height: 100%;
+    // }
 `
 
 export const BurgerItemTop = styled.span`
@@ -63,13 +87,15 @@ export const BurgerMenu = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 74vh;
+    margin-top: 84vh;
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     height: 16vh;
     padding: 1vh 0;
     backdrop-filter: blur(15px);
     width: 100vw;
-    position: relative;
+    // position: relative;
     opacity: 0;
     display: none;
     transition-duration: 0.6s;
@@ -78,6 +104,13 @@ export const BurgerMenu = styled.div`
         opacity: 1;
         display: flex;
     `};
+    @media ${device.tablet} {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+    }
 `
 
 export const BurgerItem = styled.div`
@@ -88,6 +121,14 @@ export const BurgerItem = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    @media ${device.tablet} {
+        width: 100vw;
+        height: 24vh;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+        background: black;
+    }
 `
 
 export const BurgerItemTitle = styled(Link)`

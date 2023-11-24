@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import cover from '../../img/web/two_reclining.jpg';
 import coverSmall from '../../img/web/two_reclining_small.jpg';
-import {TEXT_DARK, TEXT_LIGHT, RED, ROBOTO} from '../../components/css-settings/index';
+import {TEXT_DARK, TEXT_LIGHT, RED, ROBOTO} from '../../components/css-settings/colors';
+import {device} from '../../components/css-settings/styles/sizes';
 
 export const Wrapper = styled.div`
     width: 100vw;
@@ -12,6 +13,15 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    @media ${device.laptop} {
+        background-size: 180vw 100vh;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const AgeModalWrapper = styled.div`
@@ -23,6 +33,15 @@ export const AgeModalWrapper = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    @media ${device.laptopL} {
+        background-size: 180vw 100vh;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const AgeModal = styled.div`
@@ -36,6 +55,15 @@ export const AgeModal = styled.div`
     position: relative;
     backdrop-filter: blur(20px);
     border-radius: 15px;
+    @media ${device.laptopL} {
+        width: 60vw;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const ModalDesc = styled.div`
@@ -51,6 +79,16 @@ export const ModalDesc = styled.div`
         word-spacing: 1px;
         font-size: 1rem;
     `};
+    @media ${device.laptopL} {
+        font-size: 2rem;
+        line-height: 3vh;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const DescTitle = styled.div`
@@ -62,6 +100,15 @@ export const DescTitle = styled.div`
         margin-bottom: -5vh;
         font-family: ${ROBOTO};
     `};
+    @media ${device.laptopL} {
+        font-size: 2.5rem;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const ModalBtn = styled.div`
@@ -87,4 +134,14 @@ export const ModalBtn = styled.div`
     ${props => props.rus && `
         font-family: ${ROBOTO};
     `};
+    @media ${device.laptopL} {
+        width: 45vw;
+        font-size: 1.5rem;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `

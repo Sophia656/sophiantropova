@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from '../../css-settings/styles/sizes';
 
 export const Btn = styled.div`
     width: 2vw;
@@ -15,4 +16,10 @@ export const Btn = styled.div`
     font-size: 1.2rem;
     z-index: 500;
     cursor: pointer;
+    @media ${device.tablet} {
+        margin: 4vh 6vw;
+    }
+    @media ${device.mobileL} {
+        margin: 4vh 10vw;
+    }
 `

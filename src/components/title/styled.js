@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import {TEXT_LIGHT, RED, TEXT_DARK, RED_25, RED_45, RED_65, RED_85} from '../../components/css-settings/index';
+import {TEXT_LIGHT, RED, TEXT_DARK, RED_25, RED_45, RED_65, RED_85} from '../css-settings/colors';
+import {device} from '../css-settings/styles/sizes';
 
 export const TitleWrapper = styled.div`
     display: flex;
@@ -11,6 +12,15 @@ export const TitleWrapper = styled.div`
     ${props => props.cursor &&`
         cursor: default;
     `};
+    @media ${device.laptopL} {
+        width: 40vw;
+    }
+    @media ${device.tablet} {
+
+    }
+    @media ${device.mobileL} {
+
+    }
 `
 
 export const TitleItem = styled.h1`

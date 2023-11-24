@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {ROBOTO, RED} from '../../components/css-settings/index';
+import {ROBOTO, RED} from '../../components/css-settings/colors';
+import {device} from '../../components/css-settings/styles/sizes';
 
 export const Wrapper = styled.div`
     overflow: hidden;
@@ -26,6 +27,30 @@ export const SeriesWrap = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+    @media ${device.laptopL} {
+        height: 35vh;
+        margin: 2vh 0;
+        &:first-child {
+            margin-top: 10vh;
+        }
+        &:nth-child(2) {
+            margin-top: 10vh;
+        }
+        &:nth-child(5) {
+            margin-bottom: 10vh;
+        }
+        &:nth-child(6) {
+            margin-bottom: 10vh;
+        }
+    }
+    @media ${device.tablet} {
+        flex-direction: column;
+        width: 80vw;
+    }
+    @media ${device.mobileL} {
+        margin-top: 20vh;
+        height: 50vh;
+    }
 `
 
 export const SeriesCover = styled.img`
@@ -40,13 +65,20 @@ export const SeriesCover = styled.img`
         filter: blur(0px);
         transition: filter 1s linear;
     `}
+    @media ${device.laptopL} {
+        height: 35vh;
+        width: 40vw;
+    }
+    @media ${device.mobileL} {
+        height: 50vh;
+    }
 `
 
 export const SeriesTitle = styled(Link)`
     padding: 0.4vw 0.9vh;
     text-decoration: none;
     position: absolute;
-    z-index: 500;
+    // z-index: 500;
     color: ${RED};
     width: 27vw;
     cursor: pointer;

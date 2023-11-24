@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {BACK_LIGHT, TEXT_DARK, ROBOTO, BAI, RED} from '../../components/css-settings/index';
+import {BACK_LIGHT, TEXT_DARK, ROBOTO, BAI, RED} from '../../components/css-settings/colors';
 
 export const Wrapper = styled.div`
     width: 100vw;

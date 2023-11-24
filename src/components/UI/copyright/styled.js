@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {TEXT_DARK} from '../../css-settings/index';
+import {TEXT_DARK} from '../../css-settings/colors';
 
 export const CopyrightWrap = styled.div`
     position: absolute;
