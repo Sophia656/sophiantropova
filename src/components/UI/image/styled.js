@@ -18,11 +18,22 @@ export const ImageItem = styled.div`
     @media ${device.laptop} {
         height: 90vh;
         width: 90vw;
+        margin: 2vh 0;
+        ${props => props.w && `
+            height: 50vh;
+            width: 90vw;
+        `} 
     }
     @media ${device.tablet} {
-
+        height: 55vh;
+        width: 90vw;
+        margin: 1vh 0;
+        ${props => props.w && `
+            height: 30vh;
+            width: 90vw;
+        `} 
     }
-    @media ${device.mobileL} {
+    @media ${device.mobileM} {
 
     }
 `

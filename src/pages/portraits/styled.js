@@ -27,7 +27,7 @@ export const SeriesWrap = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    @media ${device.laptopL} {
+    @media ${device.laptop} {
         height: 35vh;
         margin: 2vh 0;
         &:first-child {
@@ -48,8 +48,21 @@ export const SeriesWrap = styled.div`
         width: 80vw;
     }
     @media ${device.mobileL} {
-        margin-top: 20vh;
-        height: 50vh;
+        margin-top: 2vh;
+        height: 55vh;
+        width: 90vw;
+        &:first-child {
+            margin-top: 10vh;
+        }
+        &:nth-child(2) {
+            margin-top: 2vh;
+        }
+        &:nth-child(5) {
+            margin-bottom: 2vh;
+        }
+        &:nth-child(6) {
+            margin-bottom: 2vh;
+        }
     }
 `
 
@@ -65,12 +78,13 @@ export const SeriesCover = styled.img`
         filter: blur(0px);
         transition: filter 1s linear;
     `}
-    @media ${device.laptopL} {
+    @media ${device.laptop} {
         height: 35vh;
         width: 40vw;
     }
     @media ${device.mobileL} {
-        height: 50vh;
+        height: 55vh;
+        width: 90vw;
     }
 `
 

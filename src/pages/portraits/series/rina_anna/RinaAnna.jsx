@@ -8,11 +8,13 @@ import img5 from '../../../../img/web/portraits/rina_anna/5.jpg';
 import img6 from '../../../../img/web/portraits/rina_anna/6.jpg';
 import img7 from '../../../../img/web/portraits/rina_anna/7.jpg';
 import img8 from '../../../../img/web/portraits/rina_anna/8.jpg';
+import img9 from '../../../../img/web/portraits/rina_anna/9.jpg';
 import MyImage from '../../../../components/UI/image/MyImage';
 
 const RinaAnna = () => {
     return (
         <Wrapper>
+            <MyImage cr_year='2022' w='true' backimg={`url(${img9})`} />
             <MyImage cr_year='2022' backimg={`url(${img1})`} />
             <MyImage cr_year='2022' backimg={`url(${img2})`} />
             <MyImage cr_year='2022' w='true' backimg={`url(${img3})`} />

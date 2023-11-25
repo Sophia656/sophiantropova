@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
     }
     @media ${device.mobileL} {
-
+        background-size: 257vw 100vh;
     }
 `
 
@@ -33,14 +33,14 @@ export const AgeModalWrapper = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    @media ${device.laptopL} {
+    @media ${device.laptop} {
         background-size: 180vw 100vh;
     }
     @media ${device.tablet} {
 
     }
     @media ${device.mobileL} {
-
+        background-size: 270vw 100vh;
     }
 `
 
@@ -55,8 +55,8 @@ export const AgeModal = styled.div`
     position: relative;
     backdrop-filter: blur(20px);
     border-radius: 15px;
-    @media ${device.laptopL} {
-        width: 60vw;
+    @media ${device.laptop} {
+        width: 80vw;
     }
     @media ${device.tablet} {
 
@@ -79,8 +79,8 @@ export const ModalDesc = styled.div`
         word-spacing: 1px;
         font-size: 1rem;
     `};
-    @media ${device.laptopL} {
-        font-size: 2rem;
+    @media ${device.laptop} {
+        font-size: 1.5rem;
         line-height: 3vh;
     }
     @media ${device.tablet} {
@@ -100,8 +100,8 @@ export const DescTitle = styled.div`
         margin-bottom: -5vh;
         font-family: ${ROBOTO};
     `};
-    @media ${device.laptopL} {
-        font-size: 2.5rem;
+    @media ${device.laptop} {
+        font-size: 1.6rem;
     }
     @media ${device.tablet} {
 
@@ -134,9 +134,9 @@ export const ModalBtn = styled.div`
     ${props => props.rus && `
         font-family: ${ROBOTO};
     `};
-    @media ${device.laptopL} {
-        width: 45vw;
-        font-size: 1.5rem;
+    @media ${device.laptop} {
+        width: 60vw;
+        font-size: 1rem;
     }
     @media ${device.tablet} {
 

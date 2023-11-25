@@ -8,6 +8,7 @@ export const Btn = styled.div`
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,10 +17,18 @@ export const Btn = styled.div`
     font-size: 1.2rem;
     z-index: 500;
     cursor: pointer;
+    @media ${device.laptop} {
+        margin: 2vh 6vw;
+        width: 3.2vw;
+        height: 3.2vw;
+        font-size: 1.3rem;
+    }
     @media ${device.tablet} {
-        margin: 4vh 6vw;
+        font-size: 1.1rem;
     }
     @media ${device.mobileL} {
-        margin: 4vh 10vw;
+        margin: 3vh 10vw;
+        width: 7.4vw;
+        height: 7.4vw;
     }
 `

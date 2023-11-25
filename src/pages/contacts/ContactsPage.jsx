@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, DescContent, Description, DescTitle, DescWrap, MailLink, TelegramLink, Wrapper } from './styled';
+import { Avatar, DescContent, DescContentText, Description, DescTitle, DescWrap, MailLink, TelegramLink, Wrapper } from './styled';
 import avatar from '../../img/web/000.jpg';
 import { useState } from 'react';
 import Copyright from '../../components/UI/copyright/Copyright';
@@ -28,22 +28,22 @@ const ContactsPage = () => {
                 <Avatar onContextMenu={onHandleRightClick} src={avatar} alt="" />
                 <Description>
                     <DescContent rus={rus}>
-                        <p>{rus
+                        <DescContentText>{rus
                         ?
                         'София Антропова – фотограф, визуальный исследователь, работающая в жанре психологического портрета, нередко для которого формой выражения выступает ню фотография. Она живет и работает в России, Москве.'
                         :
                         'Sophia Antropova is a photographer and visual researcher working in the genre of psychological portrait. For her nude photography often acts as a form of self-expression. She lives and works in Moscow, Russia.'
-                        }</p>
+                        }</DescContentText>
                     </DescContent>
                     <DescTitle rus={rus}>{rus ? 'КОНТАКТЫ' : 'CONTACTS'}</DescTitle>
                     <DescContent rus={rus}>
-                        <p>{rus
+                        <DescContentText>{rus
                         ?
                         'По всем вопросам и заказам съемок:'
                         :
                         'For all the inquiries and booking please contact:'
-                        }</p>
-                        <p>
+                        }</DescContentText>
+                        <DescContentText>
                             <MailLink 
                             active={mailLinkActive}
                             onMouseEnter={() => setMailLinkActive(true)} 
@@ -51,9 +51,9 @@ const ContactsPage = () => {
                             rus={rus} 
                             href="mailto:antropovasophia@gmail.com"
                             >antropovasophia@gmail.com</MailLink>
-                        </p>
-                        <p>{rus ? 'или' : 'or'}</p>
-                        <p>
+                        </DescContentText>
+                        <DescContentText>{rus ? 'или' : 'or'}</DescContentText>
+                        <DescContentText>
                         {rus ? 'телеграм:' : 'telegram:' }
                             <TelegramLink 
                             active={telegramLinkActive}
@@ -62,7 +62,7 @@ const ContactsPage = () => {
                             rus={rus} 
                             href="https://t.me/sophia_antropova"
                             > @antropovasophia</TelegramLink>
-                        </p>
+                        </DescContentText>
                     </DescContent>
                 </Description>
             </DescWrap>

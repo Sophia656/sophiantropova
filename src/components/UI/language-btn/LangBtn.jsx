@@ -11,7 +11,7 @@ const LangBtn = () => {
     }
     return (
         <Btn onClick={() => changeLang()}>
-            {rus ? 'en' : 'ru'}
+            <div>{rus ? 'en' : 'ru'}</div>
         </Btn>
     );
 };

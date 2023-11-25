@@ -9,12 +9,14 @@ import img6 from '../../../../img/web/portraits/kaya/6.jpg';
 import img7 from '../../../../img/web/portraits/kaya/7.jpg';
 import img8 from '../../../../img/web/portraits/kaya/8.jpg';
 import img9 from '../../../../img/web/portraits/kaya/9.jpg';
+import img10 from '../../../../img/web/portraits/kaya/10.jpg';
 import MyImage from '../../../../components/UI/image/MyImage';
 
 const Kaya = () => {
     return (
         <Wrapper>
             <MyImage cr_year='2022' w='true' backimg={`url(${img9})`} />
+            <MyImage cr_year='2022' backimg={`url(${img10})`} />
             <MyImage cr_year='2022' w='true' backimg={`url(${img2})`} />
             <MyImage cr_year='2022' w='true' backimg={`url(${img4})`} />
             <MyImage cr_year='2022' w='true' backimg={`url(${img3})`} />

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../../components/css-settings/styles/sizes';
 
 export const Wrapper = styled.div`
     overflow: hidden;
@@ -10,4 +11,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    @media ${device.laptop} {
+        margin-top: 10vh;
+    }
 `

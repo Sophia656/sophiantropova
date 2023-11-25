@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {RED, TEXT_DARK} from '../../css-settings/colors';
+import { device } from '../../css-settings/styles/sizes';
 
 export const Wrapper = styled.footer`
     position: absolute;
@@ -37,8 +38,16 @@ export const SocialIconsImg = styled.img`
 
 export const Copyright = styled.div`
     margin-top: 1vh;
+    font-size: 1.2rem;
+    @media ${device.laptop} {
+        font-size: 0.8rem;
+    }
 `
 
 export const DoubleLetter = styled.span`
     color: ${RED};
+    font-size: 1.2rem;
+    @media ${device.laptop} {
+        font-size: 0.8rem;
+    }
 `

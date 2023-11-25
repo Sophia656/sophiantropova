@@ -12,8 +12,8 @@ export const TitleWrapper = styled.div`
     ${props => props.cursor &&`
         cursor: default;
     `};
-    @media ${device.laptopL} {
-        width: 40vw;
+    @media ${device.laptop} {
+        width: 90vw;
     }
     @media ${device.tablet} {
 
@@ -43,6 +43,9 @@ export const TitleItem = styled.h1`
         -webkit-text-fill-color: transparent;
         top: 50;
     `};
+    @media ${device.laptop} {
+        font-size: 3rem;
+    }
 `
 
 export const Line = styled.div`
