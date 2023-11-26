@@ -3,27 +3,27 @@ import React, { useState } from "react";
 import LangBtn from "./components/UI/language-btn/LangBtn";
 import Burger from "./components/burger/Burger";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import ContactsPage from "./pages/contacts/ContactsPage";
-import ThreeMirrors from "./pages/personal/series/three-mirrors/ThreeMirrors";
-import Cities from "./pages/personal/series/cities/Cities";
-import Ballet from "./pages/private/series/ballet/Ballet";
-import Anton from "./pages/portraits/series/anton/Anton";
-import RinaAnna from "./pages/portraits/series/rina_anna/RinaAnna";
-import Nadya from "./pages/portraits/series/nadya/Nadya";
-import WeddDay from "./pages/private/series/wedd-day/WeddDay";
-import PrivatePage from "./pages/private/PrivatePage";
-import Kaya from "./pages/portraits/series/kaya/Kaya";
-import CentrifugalForce from "./pages/private/series/centrifugal_force/CentrifugalForce";
-import Rina from "./pages/portraits/series/rina/Rina";
-import Maya from "./pages/portraits/series/maya/Maya";
 
 const HomePage = React.lazy(() => import('./pages/home/HomePage'));
+
 const PersonalPage = React.lazy(() => import('./pages/personal/PersonalPage'));
+const ThreeMirrors = React.lazy(() => import('./pages/personal/series/three-mirrors/ThreeMirrors'));
+const Cities = React.lazy(() => import('./pages/personal/series/cities/Cities'));
+
 const PortraitsPage = React.lazy(() => import('./pages/portraits/PortraitsPage'));
+const Anton = React.lazy(() => import('./pages/portraits/series/anton/Anton'));
+const Rina = React.lazy(() => import('./pages/portraits/series/rina/Rina'));
+const Kaya = React.lazy(() => import('./pages/portraits/series/kaya/Kaya'));
+const RinaAnna = React.lazy(() => import('./pages/portraits/series/rina_anna/RinaAnna'));
+const Nadya = React.lazy(() => import('./pages/portraits/series/nadya/Nadya'));
+const Maya = React.lazy(() => import('./pages/portraits/series/maya/Maya'));
 
+const PrivatePage = React.lazy(() => import('./pages/private/PrivatePage'));
+const WeddDay = React.lazy(() => import('./pages/private/series/wedd-day/WeddDay'));
+const Ballet = React.lazy(() => import('./pages/private/series/ballet/Ballet'));
+const CentrifugalForce = React.lazy(() => import('./pages/private/series/centrifugal_force/CentrifugalForce'));
 
-
-
+const ContactsPage = React.lazy(() => import('./pages/contacts/ContactsPage'));
 
 function App() {
   const [height, setHeight] = useState(0)

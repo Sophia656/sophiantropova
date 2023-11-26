@@ -11,18 +11,10 @@ export const Wrapper = styled.div`
     top: 0;
     right: 0;
     z-index: 500;
-    // margin-top: 10vh;
-    // margin-top: ${px2vw(75)};
-    // @media (min-width: 1024px) {
-    //     width: ${px2vw(320, 768)};
-    //     min-height: ${px2vw(200, 768)};
-    //     height: 100%;
-    // }
-    // @media (min-width: 768px) {
-    //     width: ${px2vw(320, 768)};
-    //     min-height: ${px2vw(200, 768)};
-    //     height: 100%;
-    // }
+    display: none;
+    ${props => props.show &&`
+        display: block;
+    `}
 `
 export const BurgerWrapper = styled.div`
     position: fixed;

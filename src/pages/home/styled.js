@@ -87,7 +87,8 @@ export const ModalDesc = styled.div`
 
     }
     @media ${device.mobileL} {
-
+        font-size: 1rem;
+        line-height: 3vh;
     }
 `
 
