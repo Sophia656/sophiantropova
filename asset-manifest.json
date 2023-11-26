@@ -1,10 +1,23 @@
 {
   "files": {
     "main.css": "/sophiantropova/static/css/main.e9969779.css",
-    "main.js": "/sophiantropova/static/js/main.b2b5920f.js",
-    "static/js/829.0001e3c1.chunk.js": "/sophiantropova/static/js/829.0001e3c1.chunk.js",
+    "main.js": "/sophiantropova/static/js/main.75c113fe.js",
+    "static/js/829.a3489185.chunk.js": "/sophiantropova/static/js/829.a3489185.chunk.js",
     "static/js/525.a91c6d4d.chunk.js": "/sophiantropova/static/js/525.a91c6d4d.chunk.js",
+    "static/js/54.c5e1320f.chunk.js": "/sophiantropova/static/js/54.c5e1320f.chunk.js",
+    "static/js/772.5c6a7230.chunk.js": "/sophiantropova/static/js/772.5c6a7230.chunk.js",
     "static/js/682.67a896d0.chunk.js": "/sophiantropova/static/js/682.67a896d0.chunk.js",
+    "static/js/920.ef9deab1.chunk.js": "/sophiantropova/static/js/920.ef9deab1.chunk.js",
+    "static/js/104.7fc2552f.chunk.js": "/sophiantropova/static/js/104.7fc2552f.chunk.js",
+    "static/js/705.e6950775.chunk.js": "/sophiantropova/static/js/705.e6950775.chunk.js",
+    "static/js/441.b315a1cf.chunk.js": "/sophiantropova/static/js/441.b315a1cf.chunk.js",
+    "static/js/897.0cac9c81.chunk.js": "/sophiantropova/static/js/897.0cac9c81.chunk.js",
+    "static/js/895.81b9e160.chunk.js": "/sophiantropova/static/js/895.81b9e160.chunk.js",
+    "static/js/929.8ae6ce82.chunk.js": "/sophiantropova/static/js/929.8ae6ce82.chunk.js",
+    "static/js/996.6d43d6a1.chunk.js": "/sophiantropova/static/js/996.6d43d6a1.chunk.js",
+    "static/js/532.db84d3d4.chunk.js": "/sophiantropova/static/js/532.db84d3d4.chunk.js",
+    "static/js/913.7ad208db.chunk.js": "/sophiantropova/static/js/913.7ad208db.chunk.js",
+    "static/js/956.e20246b4.chunk.js": "/sophiantropova/static/js/956.e20246b4.chunk.js",
     "static/media/6.jpg": "/sophiantropova/static/media/6.84e615adedc2aab90f1c.jpg",
     "static/media/2.jpg": "/sophiantropova/static/media/2.7def9cdab10b626e0549.jpg",
     "static/media/4.jpg": "/sophiantropova/static/media/4.b1cbe86ac0f231fb63d4.jpg",
@@ -62,13 +75,26 @@
     "static/media/nadya_cover_small.jpg": "/sophiantropova/static/media/nadya_cover_small.5be8cdc164cf843416f1.jpg",
     "index.html": "/sophiantropova/index.html",
     "main.e9969779.css.map": "/sophiantropova/static/css/main.e9969779.css.map",
-    "main.b2b5920f.js.map": "/sophiantropova/static/js/main.b2b5920f.js.map",
-    "829.0001e3c1.chunk.js.map": "/sophiantropova/static/js/829.0001e3c1.chunk.js.map",
+    "main.75c113fe.js.map": "/sophiantropova/static/js/main.75c113fe.js.map",
+    "829.a3489185.chunk.js.map": "/sophiantropova/static/js/829.a3489185.chunk.js.map",
     "525.a91c6d4d.chunk.js.map": "/sophiantropova/static/js/525.a91c6d4d.chunk.js.map",
-    "682.67a896d0.chunk.js.map": "/sophiantropova/static/js/682.67a896d0.chunk.js.map"
+    "54.c5e1320f.chunk.js.map": "/sophiantropova/static/js/54.c5e1320f.chunk.js.map",
+    "772.5c6a7230.chunk.js.map": "/sophiantropova/static/js/772.5c6a7230.chunk.js.map",
+    "682.67a896d0.chunk.js.map": "/sophiantropova/static/js/682.67a896d0.chunk.js.map",
+    "920.ef9deab1.chunk.js.map": "/sophiantropova/static/js/920.ef9deab1.chunk.js.map",
+    "104.7fc2552f.chunk.js.map": "/sophiantropova/static/js/104.7fc2552f.chunk.js.map",
+    "705.e6950775.chunk.js.map": "/sophiantropova/static/js/705.e6950775.chunk.js.map",
+    "441.b315a1cf.chunk.js.map": "/sophiantropova/static/js/441.b315a1cf.chunk.js.map",
+    "897.0cac9c81.chunk.js.map": "/sophiantropova/static/js/897.0cac9c81.chunk.js.map",
+    "895.81b9e160.chunk.js.map": "/sophiantropova/static/js/895.81b9e160.chunk.js.map",
+    "929.8ae6ce82.chunk.js.map": "/sophiantropova/static/js/929.8ae6ce82.chunk.js.map",
+    "996.6d43d6a1.chunk.js.map": "/sophiantropova/static/js/996.6d43d6a1.chunk.js.map",
+    "532.db84d3d4.chunk.js.map": "/sophiantropova/static/js/532.db84d3d4.chunk.js.map",
+    "913.7ad208db.chunk.js.map": "/sophiantropova/static/js/913.7ad208db.chunk.js.map",
+    "956.e20246b4.chunk.js.map": "/sophiantropova/static/js/956.e20246b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9969779.css",
-    "static/js/main.b2b5920f.js"
+    "static/js/main.75c113fe.js"
   ]
 }
