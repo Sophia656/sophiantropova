@@ -19,8 +19,11 @@ import img18 from '../../../../img/web/personal/hasard/18.jpg';
 import img19 from '../../../../img/web/personal/hasard/19.jpg';
 import img20 from '../../../../img/web/personal/hasard/20.jpg';
 import img21 from '../../../../img/web/personal/hasard/21.jpg';
-import img22 from '../../../../img/web/personal/hasard/22.jpg';
-import img23 from '../../../../img/web/personal/hasard/23.jpg';
+import img27 from '../../../../img/web/personal/hasard/27.jpg';
+import img26 from '../../../../img/web/personal/hasard/26.jpg';
+import img25 from '../../../../img/web/personal/hasard/25.jpg';
+import img30 from '../../../../img/web/personal/hasard/30.jpg';
+import img28 from '../../../../img/web/personal/hasard/28.jpg';
 import img24 from '../../../../img/web/personal/hasard/24.jpg';
 import MyImage from '../../../../components/UI/image/MyImage';
 
@@ -30,6 +33,7 @@ const ThreeMirrors = () => {
         <Wrapper>
             <MyImage cr_year='2021' w='true' backimg={`url(${img1})`} />
             <MyImage cr_year='2021' backimg={`url(${img4})`} />
+            <MyImage cr_year='2024' w='true'  backimg={`url(${img27})`} />
             <MyImage cr_year='2022' backimg={`url(${img3})`} />
             <MyImage cr_year='2021' backimg={`url(${img2})`} />
             <MyImage cr_year='2021' backimg={`url(${img5})`} />
@@ -38,7 +42,7 @@ const ThreeMirrors = () => {
             <MyImage cr_year='2023' backimg={`url(${img10})`} />
             <MyImage cr_year='2021' backimg={`url(${img9})`} />
             <MyImage cr_year='2021' backimg={`url(${img11})`} />
-            <MyImage cr_year='2023' w='true' backimg={`url(${img23})`} />
+            <MyImage cr_year='2024' w='true' backimg={`url(${img28})`} />
             <MyImage cr_year='2022' backimg={`url(${img21})`} />
             <MyImage cr_year='2023' backimg={`url(${img12})`} />
             <MyImage cr_year='2023' backimg={`url(${img24})`} />
@@ -48,8 +52,9 @@ const ThreeMirrors = () => {
             <MyImage cr_year='2022' w='true' backimg={`url(${img13})`} />
             <MyImage cr_year='2021' backimg={`url(${img19})`} />
             <MyImage cr_year='2023' backimg={`url(${img16})`} />
-            <MyImage cr_year='2021' w='true'  backimg={`url(${img22})`} />
             <MyImage cr_year='2021' backimg={`url(${img20})`} />
+            <MyImage cr_year='2024' backimg={`url(${img26})`} />
+            <MyImage cr_year='2024' backimg={`url(${img30})`} />
         </Wrapper>
     );
 };

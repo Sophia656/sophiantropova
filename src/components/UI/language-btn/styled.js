@@ -13,6 +13,7 @@ export const Btn = styled.div`
     top: 0;
     left: 0;
     margin: 1vw;
+    padding-bottom: 0.5vh;
     color: #cabdb0;
     font-size: 1.2rem;
     z-index: 500;

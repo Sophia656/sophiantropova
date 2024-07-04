@@ -27,7 +27,7 @@ const Cities = () => {
             <MyImage cr_year='2021' w='true' backimg={`url(${img15})`} />
             <MyImage cr_year='2021' w='true' backimg={`url(${img18})`} />
             <MyImage cr_year='2019' w='true' backimg={`url(${img7})`} />
-            <MyImage cr_year='2021' w='true' backimg={`url(${img14})`} />
+            {/* <MyImage cr_year='2021' w='true' backimg={`url(${img14})`} /> */}
             <MyImage cr_year='2021' w='true' backimg={`url(${img16})`} />
             <MyImage cr_year='2019' w='true' backimg={`url(${img9})`} />
         </Wrapper>

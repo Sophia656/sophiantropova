@@ -11,10 +11,10 @@ export const Wrapper = styled.div`
     top: 0;
     right: 0;
     z-index: 500;
-    display: none;
-    ${props => props.show &&`
-        display: block;
-    `}
+    // display: none;
+    // ${props => props.show &&`
+    //     display: block;
+    // `}
 `
 export const BurgerWrapper = styled.div`
     position: fixed;
