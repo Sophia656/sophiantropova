@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     `}
     @media ${device.mobileL} {
         // height: 90vh;
-        margin: 5vh 0;
+        // margin: 5vh 0;
         background-size: 257vw 100vh;
     }
 `
@@ -35,7 +35,7 @@ export const BurgerWrapper = styled.div`
     z-index: 1000;
     @media ${device.mobileL} {
         // height: 90vh;
-        margin-top: 2vh;
+        margin-top: 1vh;
         // background-size: 257vw 100vh;
     }
     
@@ -108,7 +108,7 @@ export const BurgerMenu = styled.div`
     @media ${device.mobileL} {
         height: 100vh;
         margin: 0;
-        padding: 5vh 0 10vh 0;
+        padding: 10vh 0;
         background-size: 257vw 100vh;
     }
 `

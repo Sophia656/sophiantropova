@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
 
     }
     @media ${device.mobileL} {
-        height: 90vh;
-        margin: 5vh 0;
+        // height: 100vh;
+        // margin: 0 0 5vh 0;
         background-size: 257vw 100vh;
     }
 `
