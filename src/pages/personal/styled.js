@@ -14,6 +14,11 @@ export const Wrapper = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: ${props => props.mt || '0'};
+    @media ${device.mobileL} {
+        // height: 90vh;
+        margin: 5vh 0;
+        background-size: 257vw 100vh;
+    }
 `
 
 export const SeriesWrap = styled.div`

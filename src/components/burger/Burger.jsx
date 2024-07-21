@@ -9,7 +9,7 @@ const Burger = () => {
     const [active, setActive] = useState(false)
     const [showSeries, setShowSeries] = useState(false)
     const [changeDots, setChangeDots] = useState(false)
-    const { rus, location, handleClick, testAgeModal } = useContext(PagesContext)
+    const { rus, location, handleClick, testAgeModal, showBurger } = useContext(PagesContext)
 
     
 
@@ -22,7 +22,7 @@ const Burger = () => {
     }, [location])
 
     return (
-        <Wrapper show={!testAgeModal}>
+        <Wrapper show={showBurger}>
             <BurgerWrapper onClick={() => setActive(!active)} onMouseEnter={() => setShowSeries(false)}>
                 <BurgerItemTop dotback={changeDots ? BACK_DARK : ''} active={active} />
                 <BurgerItemBottom dotback={changeDots ? BACK_DARK : ''} active={active} />

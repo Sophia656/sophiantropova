@@ -11,10 +11,15 @@ export const Wrapper = styled.div`
     top: 0;
     right: 0;
     z-index: 500;
-    // display: none;
-    // ${props => props.show &&`
-    //     display: block;
-    // `}
+    display: none;
+    ${props => props.show &&`
+        display: block;
+    `}
+    @media ${device.mobileL} {
+        // height: 90vh;
+        margin: 5vh 0;
+        background-size: 257vw 100vh;
+    }
 `
 export const BurgerWrapper = styled.div`
     position: fixed;
@@ -28,16 +33,12 @@ export const BurgerWrapper = styled.div`
     text-align: right;
     cursor: pointer;
     z-index: 1000;
-    // @media (min-width: 1024px) {
-    //     width: ${px2vw(320, 768)};
-    //     min-height: ${px2vw(200, 768)};
-    //     height: 100%;
-    // }
-    // @media (min-width: 768px) {
-    //     width: ${px2vw(320, 768)};
-    //     min-height: ${px2vw(200, 768)};
-    //     height: 100%;
-    // }
+    @media ${device.mobileL} {
+        // height: 90vh;
+        margin-top: 2vh;
+        // background-size: 257vw 100vh;
+    }
+    
 `
 
 export const BurgerItemTop = styled.span`
@@ -92,6 +93,7 @@ export const BurgerMenu = styled.div`
     display: none;
     transition-duration: 0.6s;
     transition-timing-function: easy-in-out;
+    margin: 0;
     ${props => props.active&&`
         opacity: 1;
         display: flex;
@@ -102,6 +104,12 @@ export const BurgerMenu = styled.div`
         flex-direction: column;
         margin-top: 0;
         padding: 0;
+    }
+    @media ${device.mobileL} {
+        height: 100vh;
+        margin: 0;
+        padding: 5vh 0 10vh 0;
+        background-size: 257vw 100vh;
     }
 `
 
@@ -116,6 +124,14 @@ export const BurgerItem = styled.div`
     @media ${device.tablet} {
         width: 100vw;
         height: 24vh;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+        background: black;
+    }
+    @media ${device.mobileL} {
+        width: 100vw;
+        height: 18vh;
         flex-direction: column;
         margin-top: 0;
         padding: 0;

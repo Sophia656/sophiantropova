@@ -7,9 +7,9 @@ const HomePage = () => {
     const {testAgeModal, setTestAgeModal, rus, setShowBurger} = useContext(PagesContext)
     const [minorsModal, setMinorsModal] = useState(false)
 
-    const startSettimeout = () => {
-        setShowBurger(true)
-    }
+    // const startSettimeout = () => {
+    //     setShowBurger(true)
+    // }
 
     const forMinors = () => {
         setMinorsModal(true)
@@ -52,7 +52,7 @@ const HomePage = () => {
                 <ModalBtn rus={rus} onClick={() => forMinors()}>
                     {rus ? 'Нет, мне нет 18 лет' : "No, I'm not 18 years old"}
                 </ModalBtn>
-                <ModalBtn rus={rus} onClick={() => {setTestAgeModal(false); startSettimeout()}}>
+                <ModalBtn rus={rus} onClick={() => {setTestAgeModal(false); setShowBurger(true)}}>
                     {rus ? 'Да, мне есть 18 лет' : 'Yes, I am 18 years old'}
                 </ModalBtn>
             </AgeModal>

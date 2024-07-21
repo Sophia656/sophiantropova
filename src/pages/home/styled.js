@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin: 0;
     @media ${device.laptop} {
         background-size: 180vw 100vh;
     }
@@ -20,6 +21,8 @@ export const Wrapper = styled.div`
 
     }
     @media ${device.mobileL} {
+        height: 90vh;
+        margin: 5vh 0;
         background-size: 257vw 100vh;
     }
 `

@@ -28,7 +28,7 @@ export const Btn = styled.div`
         font-size: 1.1rem;
     }
     @media ${device.mobileL} {
-        margin: 3vh 10vw;
+        margin: 6vh 10vw;
         width: 7.4vw;
         height: 7.4vw;
     }

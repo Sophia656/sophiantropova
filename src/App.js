@@ -35,8 +35,10 @@ function App() {
   const [rus, setRus] = useState(false)
   const [showBurger, setShowBurger] = useState(false)
 
+  //пока не открыта home, бургер не видать
+
   const handleClick = () => {
-    document.scrollIntoView(0, {behavior: 'smooth'});
+    document.scrollIntoView(0, {behavior: 'smooth'})
   }
 
   return (
