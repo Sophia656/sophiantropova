@@ -80,6 +80,7 @@ export const BurgerMenu = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     margin-top: 84vh;
     display: flex;
     flex-direction: row;
@@ -93,7 +94,6 @@ export const BurgerMenu = styled.div`
     display: none;
     transition-duration: 0.6s;
     transition-timing-function: easy-in-out;
-    margin: 0;
     ${props => props.active&&`
         opacity: 1;
         display: flex;
@@ -108,7 +108,7 @@ export const BurgerMenu = styled.div`
     @media ${device.mobileL} {
         height: 100vh;
         margin: 0;
-        padding: 10vh 0;
+        padding: 13vh 0;
         background-size: 257vw 100vh;
     }
 `

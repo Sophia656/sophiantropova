@@ -3,6 +3,7 @@ import cover from '../../img/web/two_reclining.jpg';
 import coverSmall from '../../img/web/two_reclining_small.jpg';
 import {TEXT_DARK, TEXT_LIGHT, RED, ROBOTO} from '../../components/css-settings/colors';
 import {device} from '../../components/css-settings/styles/sizes';
+import cursor from '../../img/web/cursor.png';
 
 export const Wrapper = styled.div`
     width: 100vw;
@@ -14,6 +15,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     margin: 0;
+    cursor: url(${cursor}, auto);
     @media ${device.laptop} {
         background-size: 180vw 100vh;
     }

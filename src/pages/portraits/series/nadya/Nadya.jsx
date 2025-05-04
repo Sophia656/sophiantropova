@@ -10,7 +10,7 @@ import MyImage from '../../../../components/UI/image/MyImage';
 const Nadya = () => {
     return (
         <Wrapper>
-            <MyImage cr_year='2022' backimg={`url(${img1})`} />
+            <MyImage id='first' cr_year='2022' backimg={`url(${img1})`} />
             <MyImage cr_year='2022' backimg={`url(${img2})`} />
             <MyImage cr_year='2022' backimg={`url(${img3})`} />
             <MyImage cr_year='2022' backimg={`url(${img5})`} />

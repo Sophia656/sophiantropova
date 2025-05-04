@@ -1,5 +1,5 @@
 import { PagesContext } from "./components/context/context"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LangBtn from "./components/UI/language-btn/LangBtn";
 import Burger from "./components/burger/Burger";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
@@ -38,8 +38,23 @@ function App() {
   //пока не открыта home, бургер не видать
 
   const handleClick = () => {
-    document.scrollIntoView(0, {behavior: 'smooth'})
+    window.scrollIntoView(0, {behavior: 'smooth'})
   }
+
+  // const [scrollCl, setScrollCl] = useState(0)
+
+  // useEffect(() => {
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  // const handleScroll = () => {
+  //     setScrollCl(window.scrollY);
+  // };
+
+  // useEffect(() => {
+  //   console.log('scrollCl: ', scrollCl, window.scrollY)
+  // }, [scrollCl, window.scrollY])
 
   return (
     <PagesContext.Provider value={{
@@ -95,7 +110,7 @@ function App() {
               <RinaAnna />
           </React.Suspense>
         }/>
-        <Route path='/portraits/kaya_kan' element={
+        <Route path='/portraits/kaya' element={
           <React.Suspense fallback={<div>loading</div>}>
               <Kaya />
           </React.Suspense>

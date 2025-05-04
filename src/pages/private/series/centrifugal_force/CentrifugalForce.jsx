@@ -11,10 +11,10 @@ const CentrifugalForce = () => {
     return (
         <Wrapper>
             <MyImage cr_year='2021' w='true' backimg={`url(${img1})`} />
-            <MyImage cr_year='2021' backimg={`url(${img2})`} />
             <MyImage cr_year='2021' backimg={`url(${img3})`} />
-            <MyImage cr_year='2021' backimg={`url(${img4})`} />
             <MyImage cr_year='2021' backimg={`url(${img5})`} />
+            <MyImage cr_year='2021' backimg={`url(${img4})`} />
+            <MyImage cr_year='2021' backimg={`url(${img2})`} />
         </Wrapper>
     );
 };

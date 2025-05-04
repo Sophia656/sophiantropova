@@ -30,6 +30,8 @@ export const DescWrap = styled.div`
 
 export const Avatar = styled.img`
     width: 22vw;
+    border-radius: 0.1vw;
+    box-shadow: 1px 1px 155px #d3cfcb;
     @media ${device.laptop} {
         width: 30vw;
     }

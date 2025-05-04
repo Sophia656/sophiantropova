@@ -83,7 +83,7 @@ const PortraitsPage = () => {
                 loaded={kayaSrc === kaya ? true : false}
                 onContextMenu={(e) => e.preventDefault()}
                  />
-                <SeriesTitle onClick={handleClick} to='/portraits/kaya_kan'>KAYA KAN<br/>2022</SeriesTitle>
+                <SeriesTitle onClick={handleClick} to='/portraits/kaya'>KAYA<br/>2022</SeriesTitle>
             </SeriesWrap>
             <SeriesWrap>
                 <SeriesCover src={rinaAnnaSrc} 

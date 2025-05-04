@@ -9,7 +9,7 @@ export const paths = [
     '/portraits/anton',
     '/portraits/rina',
     '/portraits/rina_anna',
-    '/portraits/kaya_kan',
+    '/portraits/kaya',
     '/portraits/nadya',
     '/portraits/maya',
     '/portraits/nastasya',

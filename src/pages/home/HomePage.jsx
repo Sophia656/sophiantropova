@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { PagesContext } from '../../components/context/context';
 import Title from '../../components/title/Title';
 import { AgeModal, AgeModalWrapper, DescTitle, ModalBtn, ModalDesc, Wrapper } from './styled';
@@ -7,13 +7,15 @@ const HomePage = () => {
     const {testAgeModal, setTestAgeModal, rus, setShowBurger} = useContext(PagesContext)
     const [minorsModal, setMinorsModal] = useState(false)
 
-    // const startSettimeout = () => {
-    //     setShowBurger(true)
-    // }
-
     const forMinors = () => {
         setMinorsModal(true)
     }
+
+    useEffect(() => {
+        if (!testAgeModal) {
+            setShowBurger(true)
+        }
+    }, [testAgeModal])
 
     return (
         <>
@@ -52,7 +54,7 @@ const HomePage = () => {
                 <ModalBtn rus={rus} onClick={() => forMinors()}>
                     {rus ? 'Нет, мне нет 18 лет' : "No, I'm not 18 years old"}
                 </ModalBtn>
-                <ModalBtn rus={rus} onClick={() => {setTestAgeModal(false); setShowBurger(true)}}>
+                <ModalBtn rus={rus} onClick={() => setTestAgeModal(false)}>
                     {rus ? 'Да, мне есть 18 лет' : 'Yes, I am 18 years old'}
                 </ModalBtn>
             </AgeModal>

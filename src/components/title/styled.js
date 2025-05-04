@@ -13,13 +13,13 @@ export const TitleWrapper = styled.div`
         cursor: default;
     `};
     @media ${device.laptop} {
-        width: 90vw;
+        width: 35vw;
     }
     @media ${device.tablet} {
-
+        width: 50vw;
     }
     @media ${device.mobileL} {
-
+        width: 90vw;
     }
 `
 

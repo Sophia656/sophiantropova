@@ -39,6 +39,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  
+  cursor: url('crsr.png'), auto;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -58,6 +60,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 15px;
   background: linear-gradient(180deg, #000000, #cabdb0, #000000);
 }
+
 
 html {
   overflow: hidden;
